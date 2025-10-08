@@ -43,8 +43,8 @@ dev_config_t InitConfig (void)
         .device_name[18] = 0,
         .device_name[19] = 0,
 
-        .vid = 0x0483,										// ST
-        .pid = 0x5757,
+        .vid = 0x4774,										// ST
+        .pid = 0x2008,
 
         .button_debounce_ms = 50,					// debounce time for all buttons
 

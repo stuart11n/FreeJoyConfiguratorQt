@@ -85,8 +85,8 @@ private:
     static const int m_typeLimCount = 2;
     const pinTypeLimit_t m_ButtonsTypeLimit[m_typeLimCount] =
     {
-        {ENCODER_INPUT_A,        15},
-        {ENCODER_INPUT_B,        15},
+        {ENCODER_INPUT_A,        MAX_ENCODERS_NUM},
+        {ENCODER_INPUT_B,        MAX_ENCODERS_NUM},
     };
 };
 

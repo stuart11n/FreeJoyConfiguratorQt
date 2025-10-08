@@ -231,7 +231,7 @@
            <string notr="true">HHHH</string>
           </property>
           <property name="text">
-           <string notr="true">0483</string>
+           <string notr="true">4774</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -256,7 +256,7 @@
            <string notr="true">HHHH</string>
           </property>
           <property name="text">
-           <string notr="true">5750</string>
+           <string notr="true">2008</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>

@@ -20,6 +20,7 @@ void HidDevice::processData()                   /////// bad code, I'll try to re
 {
     const QString FLASHER_PROD_STR ("FreeJoy Flasher");
     const QString FJ_MANUFACT_STR ("FreeJoy");
+    const QString S16N_MANUFACT_STR ("s16n");
     const QString OLD_MANUFACT_STR ("STMicroelectronics");
 
     // m_hidDevicesList - should be thread safe
@@ -81,6 +82,9 @@ void HidDevice::processData()                   /////// bad code, I'll try to re
                 }
                 // add devices ptr to list. since FJ v1.7 we have changed the name and made two interfaces
                 if (QString::fromWCharArray(hidDevInfo->manufacturer_string) == FJ_MANUFACT_STR && hidDevInfo->interface_number == 1) {
+                    tmp_HidList.append(qMakePair(false, hidDevInfo));
+                }
+                else if (QString::fromWCharArray(hidDevInfo->manufacturer_string) == S16N_MANUFACT_STR && hidDevInfo->interface_number == 1) {
                     tmp_HidList.append(qMakePair(false, hidDevInfo));
                 }
                 // search the old firmware device
